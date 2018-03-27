@@ -1,0 +1,383 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pacman LIBRAS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript">
+function id( el ){
+	return document.getElementById( el );
+}
+function name( el ){
+	return document.getElementsByName( el );
+}
+function valida_questionario( questionario )
+{
+	for( var i=0; i<questionario.length; i++ )
+	{
+		if( questionario[i].checked )
+			return true;
+	}
+	return false;	
+}
+window.onload = function()
+{
+	id('questionario').onsubmit = function()
+	{
+		var erro = false;
+		if( !valida_questionario( name('questao1') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 1!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao2') ) )
+		{ 
+			alert( 'Nenhuma resposta marcada na Questão 2!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao3') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 3!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao4') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 4!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao5') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 5!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao6') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 6!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao7') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 7!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao8') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 8!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao9') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 9!' ); 
+			erro = true;
+		}
+		if( !valida_questionario( name('questao10') ) )
+		{
+			alert( 'Nenhuma resposta marcada na Questão 10!' ); 
+			erro = true;
+		}
+		if( erro )
+			return false;
+	}
+}
+</script>
+<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg111">
+<div class="container">
+<div class="row header">
+		<div class="logo navbar-left">
+			<h1><a href="index.html">Atividades - Nível Básico</a></h1>	
+		</div>
+				<div class=" navbar-right"> 
+				<form method="POST" action="login.php">
+					<font size=2" color="000000" face="regular">
+					<span>Login:&nbsp&nbsp&nbsp&nbsp</span><input type="text" name="login" id="login" required ><br>
+					<label>Senha:&nbsp&nbsp</label><input type="password" name="senha" id="senha" required><br>
+					</font>
+					<center>
+					<a href="cadastro.html"><span>Cadastre-se</span></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<a href="esquecisenha.html"><span>Esqueci a senha</span></a></br>
+					</center>
+					<center><input type="submit" value="entrar" id="entrar" name="Entrar"></center>
+
+				</form>
+				</div>
+			<div class="h_search navbar-left">
+					<form id="demo-2">
+						<input type="search" placeholder="Search" > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					</form>
+			</div>
+		
+		<div class="clearfix"></div>
+	</div>
+	<div class="row h_menu">
+		<nav class="navbar navbar-default navbar-left" role="navigation">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html">Pagina Inicial</a></li>
+		        <li><a href="historia.html">História da Libras</a></li>
+		        <li><a href="instituicoes.html">Instituições</a></li>
+		        <li><a href="eventos.html">Eventos</a></li>
+		        <li class="active"><a href="atvbasico.html">Atividades</a></li>
+				<li><a href="curiosidades.html">Curiosidades</a></li>
+				<li><a href="legislacao.html">Legislação</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				</ul>
+		    </div><!-- /.navbar-collapse -->
+		    <!-- start soc_icons 
+		</nav>
+		<div class="soc_icons navbar-right">
+			<ul class="list-unstyled text-center">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			</ul>	
+		</div> -->
+	</div>
+	<div class="clearfix"></div>
+</div>
+</div>
+
+<div class="main_bg"><!-- start main -->
+	<div class="container">
+		<div class="technology row">
+			
+			<div class="technology_list">
+					<div class="col-md-10 tech_para">
+					<form id="questionario" name ="questionario" method ="POST" action="respostabasico.php">
+					<h4>1) Identifique quais palavras estão no quadro abaixo:</h4>
+					<img src="al/c.png"><img src="al/a.png"><img src="al/v.png"><img src="al/a.png"><img src="al/l.png"><img src="al/o.png"><br>
+					<img src="al/a.png"><img src="al/b.png"><img src="al/e.png"><img src="al/l.png"><img src="al/h.png"><img src="al/a.png"><br>
+					<img src="al/j.png"><img src="al/a.png"><img src="al/c.png"><img src="al/a.png"><img src="al/r.png"><img src="al/e.png"><br>
+					<img src="al/p.png"><img src="al/o.png"><img src="al/r.png"><img src="al/c.png"><img src="al/o.png"><br>	
+					<p>
+					<label>
+					<input type="radio" name="questao1" value="a" />  A) Cachorro - Abelha - Jacaré - Porco.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao1" value="b" /> B) Cavalo - Abelha - Jacaré - Porco.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao1" value="c" /> C) Cachorro - Abelha - Jiboia - Porco.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao1" value="d" /> D) Cavalo - Abelha - Jiboia - Porco.</label>
+					<br />
+					<br />
+					 
+					<h4> 2) Identifique a sequência de números identificados abaixo:</h4>
+					<label>
+					<img src="nu/0.png"><img src="nu/3.png"> — <img src="nu/8.png"><img src="nu/0.png"> — <img src="nu/4.png"><img src="nu/9.png"> — <img src="nu/5.png"><img src="nu/8.png"><br>						
+					
+					<input type="radio" name="questao2" value="a" /> A) 63 - 86 - 49 - 58.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao2" value="b" /> B) 03 - 86 - 49 - 59.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao2" value="c" /> C) 03 - 80 - 49 - 58.</label>
+					<br />
+					<label>
+					<input type="radio" name="questao2" value="d" /> D) 63 - 76 - 49 - 57.</label>
+					<br />
+					<br />
+					 
+					<h4> 3) Qual das sequências abaixo corresponde à palavra: ANIMAL?</h4>
+					1 — <img src="al/m.png"><img src="al/a.png"><img src="al/n.png"><img src="al/i.png"><img src="al/l.png"><img src="al/a.png"><br>
+					2 — <img src="al/l.png"><img src="al/a.png"><img src="al/m.png"><img src="al/i.png"><img src="al/n.png"><img src="al/a.png"><br>
+					3 — <img src="al/a.png"><img src="al/n.png"><img src="al/i.png"><img src="al/m.png"><img src="al/a.png"><img src="al/l.png"><br>
+					4 — <img src="al/i.png"><img src="al/n.png"><img src="al/a.png"><img src="al/l.png"><img src="al/a.png"><img src="al/m.png"><br>
+					<label>
+					<input type="radio" name="questao3" value="a" /> A) 1</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao3" value="b" /> B) 2</label> &nbsp&nbsp					
+					<label>
+					<input type="radio" name="questao3" value="c" /> C) 3</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao3" value="d" /> D) 4</label><BR>
+					<BR>
+					<BR>
+					
+					<h4> 4) Qual das sequências abaixo corresponde à palavra: SERVIDOR?</h4>
+					1 — <img src="al/s.png"><img src="al/e.png"><img src="al/r.png"><img src="al/v.png"><img src="al/i.png"><img src="al/d.png"><img src="al/o.png"><img src="al/r.png"><br>
+					2 — <img src="al/r.png"><img src="al/o.png"><img src="al/d.png"><img src="al/i.png"><img src="al/v.png"><img src="al/r.png"><img src="al/e.png"><img src="al/s.png"><br>
+					3 — <img src="al/a.png"><img src="al/n.png"><img src="al/i.png"><img src="al/m.png"><img src="al/a.png"><img src="al/l.png"><img src="al/e.png"><img src="al/s.png"><br>
+					4 — <img src="al/d.png"><img src="al/o.png"><img src="al/i.png"><img src="al/n.png"><img src="al/a.png"><img src="al/l.png"><img src="al/a.png"><img src="al/m.png"><br>
+					<label>
+					<input type="radio" name="questao4" value="a" /> A) 1</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao4" value="b" /> B) 2</label> &nbsp&nbsp					
+					<label>
+					<input type="radio" name="questao4" value="c" /> C) 3</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao4" value="d" /> D) 4</label><BR>
+					<BR>
+					<BR>
+					
+					<h4> 5) Qual das sequências abaixo corresponde à palavra: MENINO?</h4>
+					1 — <img src="al/a.png"><img src="al/e.png"><img src="al/n.png"><img src="al/i.png"><img src="al/n.png"><img src="al/o.png"><br>
+					2 — <img src="al/n.png"><img src="al/e.png"><img src="al/n.png"><img src="al/i.png"><img src="al/n.png"><img src="al/u.png"><br>
+					3 — <img src="al/m.png"><img src="al/e.png"><img src="al/n.png"><img src="al/i.png"><img src="al/n.png"><img src="al/o.png"><br>
+					4 — <img src="al/n.png"><img src="al/e.png"><img src="al/n.png"><img src="al/i.png"><img src="al/n.png"><img src="al/a.png"><br>
+					<label>
+					<input type="radio" name="questao5" value="a" /> A) 1</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao5" value="b" /> B) 2</label> &nbsp&nbsp					
+					<label>
+					<input type="radio" name="questao5" value="c" /> C) 3</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao5" value="d" /> D) 4</label><BR>
+					<BR>
+					<BR>
+					
+					<h4> 6) Qual das sequências abaixo corresponde à palavra: OCULOS?</h4>
+					1 — <img src="al/o.png"><img src="al/c.png"><img src="al/o.png"><img src="al/l.png"><img src="al/o.png"><img src="al/s.png"><br>
+					2 — <img src="al/o.png"><img src="al/k.png"><img src="al/o.png"><img src="al/l.png"><img src="al/o.png"><img src="al/s.png"><br>
+					3 — <img src="al/m.png"><img src="al/e.png"><img src="al/n.png"><img src="al/i.png"><img src="al/n.png"><img src="al/o.png"><br>
+					4 — <img src="al/o.png"><img src="al/c.png"><img src="al/u.png"><img src="al/l.png"><img src="al/o.png"><img src="al/s.png"><br>
+					<label>
+					<input type="radio" name="questao6" value="a" /> A) 1</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao6" value="b" /> B) 2</label> &nbsp&nbsp					
+					<label>
+					<input type="radio" name="questao6" value="c" /> C) 3</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao6" value="d" /> D) 4</label><BR>
+					<BR>
+					<BR>
+					
+					
+					<h4> 7) Qual das sequências abaixo corresponde à palavra: AULA?</h4>
+					1 — <img src="al/a.png"><img src="al/u.png"><img src="al/l.png"><img src="al/a.png"><br>
+					2 — <img src="al/a.png"><img src="al/u.png"><img src="al/l.png"><img src="al/o.png"><br>
+					3 — <img src="al/o.png"><img src="al/d.png"><img src="al/u.png"><img src="al/a.png"><br>
+					4 — <img src="al/a.png"><img src="al/u.png"><img src="al/i.png"><img src="al/a.png"><br>
+					<label>
+					<input type="radio" name="questao7" value="a" /> A) 1</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao7" value="b" /> B) 2</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao7" value="c" /> C) 3</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao7" value="d" /> D) 4</label><BR>
+					<BR>
+					<BR>
+					
+					
+					<h4> 8) Qual o mês correspondente na demonstração abaixo?</h4>
+					<img src="al/m.png"><img src="al/a.png"><img src="al/i.png"><img src="al/o.png"><br>
+					
+					<label>
+					<input type="radio" name="questao8" value="a" /> A) Março</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao8" value="b" /> B) Abril</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao8" value="c" /> C) Maio</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao8" value="d" /> D) Junho</label><BR>
+					<BR>
+					<BR>
+					
+					<h4> 9) Qual o nome próprio corresponde à imagen abaixo?</h4>
+					<img src="al/j.png"><img src="al/o.png"><img src="al/e.png"><img src="al/l.png"><img src="al/i.png"><img src="al/t.png"><img src="al/o.png"><img src="al/n.png"><br>
+					
+					<label>
+					<input type="radio" name="questao9" value="a" /> A) Joeliton</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao9" value="b" /> B) Juliana</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao9" value="c" /> C) Geovane</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao9" value="d" /> D) Josildo</label><BR>
+					<BR>
+					<BR>
+					
+					
+					<h4> 10) Qual o nome das seleções de futebol abaixo?</h4>
+					<img src="al/h.png"><img src="al/o.png"><img src="al/l.png"><img src="al/a.png"><img src="al/n.png"><img src="al/d.png"><img src="al/a.png"><br>
+					<img src="al/a.png"><img src="al/l.png"><img src="al/e.png"><img src="al/m.png"><img src="al/a.png"><img src="al/n.png"><img src="al/h.png"><img src="al/a.png"><br>
+					<img src="al/n.png"><img src="al/i.png"><img src="al/g.png"><img src="al/e.png"><img src="al/r.png"><img src="al/i.png"><img src="al/a.png"><br>
+					
+					<label>
+					<input type="radio" name="questao10" value="a" /> A) Austrália, Nigéria, Brasil</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao10" value="b" /> B) Uruguai, Portugal, Espanha</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao10" value="c" /> C) Holanda, Alemanha, Nigéria</label> &nbsp&nbsp
+					<label>
+					<input type="radio" name="questao10" value="d" /> D) Argentina, Paraguai, Brasil</label><BR>
+					<BR>
+					<BR>
+					
+					
+
+					
+					
+					
+					<input type="submit" name="enviar" id = "enviar" value="Enviar" />
+					</form>
+		
+			<br>
+			
+			<div class="alert alert-warning alert-dismissable">
+			  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			  <strong>Atenção!</strong> Responda todas as atividades para que possamos lhe avaliar.
+			</div>
+			</div>
+		</div>
+		
+	</div>
+</div><!-- end main -->
+<div class="footer_bg"><!-- start footer -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-left">
+				<p> <span style="text-indent: left;">Visite nossas redes sociais:<br></span></p>
+		<a href="https://www.facebook.com/pacman.libras.9" target="_blank"><img src="images/iconefb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="https://www.instagram.com/portalpacmanlibras/" target="_blank"><img src="images/iconeig.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://twitter.com/PacmanLibras" target="_blank"><img src="images/iconett.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://plus.google.com/103196381126989669819?hl=pt-BR" target="_blank"><img src="images/iconeg+.png"></a>
+			</div>
+			<div class="copy text-right">
+				<p class="link"><span style="text-align: right;">&#169; Todos os direitos reservados | Design by&nbsp;PACMAN LIBRAS</span></p>
+				</div>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
